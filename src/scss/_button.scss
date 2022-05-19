@@ -1,10 +1,6 @@
 button {
     color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 40px;
-    gap: 10px;
     width: 128px;
     height: 48px;
     left: 830px;
@@ -12,7 +8,8 @@ button {
     background: #e4c1ae;
     border-radius: 32px;
     border: none;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+}
+
+button:hover {
+    cursor: pointer;
 }

@@ -1,0 +1,53 @@
+#dialogOverlay {
+    display: none;
+    position: absolute;
+    width: 1440px;
+    height: 960px;
+    left: 0px;
+    top: 0px;
+    background: $main-font-color;
+    opacity: 0.5;
+}
+#bgContent {
+    width: 980px;
+    height: 330px;
+    left: 230px;
+    top: 96px;
+}
+#dialogBox {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 920px;
+    height: 210px;
+    left: 260px;
+    top: 375px;
+    z-index: 200;
+    #boxContent {
+        // position: absolute;
+        width: 380px;
+        height: 98px;
+        left: 355px;
+        top: 431px;
+        
+        h2 {
+            @include big;
+        }
+
+        p#alert {
+            @include small;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        p#close {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 1116px;
+            top: 415px;
+        }
+    }
+}

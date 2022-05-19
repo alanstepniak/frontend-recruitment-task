@@ -1,49 +1,30 @@
-@import 'button';
-@import 'variables';
+@import "variables";
+@import "mixins";
+@import "button";
+@import "text";
+@import "alert";
+body {
+    color: $main-font-color;
+    font-family: $main-font-family;
 
-#container {
-    width: 1440px;
-    height: 960px;
+    #container {
+        width: 1440px;
+        height: 960px;
 
-    img {
-        position: absolute;
-        width: 505px;
-        height: 330px;
-        left: 230px;
-        top: 96px;
-    }
-
-    #content {
-        position: relative;
-        width: 380px;
-        height: 250px;
-        left: 830px;
-        top: 136px;
-        
-        h1 {
-            color: $main-font-color;
-            font-family: $main-font-family;
-            width: 380px;
-            height: 50px;
-            left: calc(50% - 380px / 2 + 300px);
-            top: calc(50% - 50px / 2 - 319px);
-            font-style: normal;
-            font-weight: 700;
-            font-size: 42px;
-            line-height: 120%;
+        img {
+            position: absolute;
+            width: 505px;
+            height: 330px;
+            left: 230px;
+            top: 96px;
         }
 
-        p {
-            color: $main-font-color;
-            font-family: $main-font-family;
+        #content {
+            position: relative;
             width: 380px;
-            height: 96px;
-            left: calc(50% - 380px / 2 + 300px);
-            top: calc(50% - 96px / 2 - 222px);
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 150%;
+            height: 250px;
+            left: 830px;
+            top: 136px;
         }
     }
 }

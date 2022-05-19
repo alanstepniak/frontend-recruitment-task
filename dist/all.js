@@ -1,1 +1,1 @@
-console.log("działa");const test=()=>{};
+let btn=document.getElementsByTagName("button")[0],ovl=document.getElementById("dialogOverlay");customAlert=()=>{let e=document.getElementById("dialogOverlay"),l=document.getElementById("dialogBox");e.style.display="block",l.style.display="block"},closeAlert=()=>{dialogOverlay.style.display="none",dialogBox.style.display="none"},btn.addEventListener("click",customAlert),ovl.addEventListener("click",closeAlert);
