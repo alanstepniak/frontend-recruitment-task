@@ -6,13 +6,15 @@
 body {
     color: $main-font-color;
     font-family: $main-font-family;
+    background-color: #e5e5e5;
 
     #container {
-        width: 1440px;
-        height: 960px;
+        max-width: 1440px;
+        max-height: 960px;
+        display: flex;
+        justify-content: center;
 
         img {
-            position: absolute;
             width: 505px;
             height: 330px;
             left: 230px;
@@ -20,7 +22,7 @@ body {
         }
 
         #content {
-            position: relative;
+            margin-left: 95px;
             width: 380px;
             height: 250px;
             left: 830px;

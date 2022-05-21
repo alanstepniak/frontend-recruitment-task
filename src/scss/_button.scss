@@ -1,13 +1,7 @@
-button {
-    color: #ffffff;
-    padding: 16px 40px;
-    width: 128px;
-    height: 48px;
+#button {
     left: 830px;
     top: 338px;
-    background: #e4c1ae;
-    border-radius: 32px;
-    border: none;
+    @include button;
 }
 
 button:hover {

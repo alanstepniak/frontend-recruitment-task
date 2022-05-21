@@ -27,22 +27,26 @@
                             and
                             legacy
                             infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-                        <button>Button</button>
+                        <button id="button">Button</button>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <aside>
-        <div id="dialogOverlay"></div>
-        <div id="dialogBox">
-            <div id="boxContent">
-                <h2>Alert!</h2>
-                <p id="alert">You have clicked <span>X times</span> to related button.</p>
-                <p id="close">&times;</p>
+        <aside>
+            <div id="dialogOverlay">
+            <div id="dialogBox">
+                <div id="boxContent">
+                    <h2>Alert!</h2>
+                    <p id="alert">You have clicked <span id="counter">0</span><span> times</span> to related button.</p>
+                    <button id="reset">Reset</button>
+                </div>
+                <span id="close">&times;</span>
             </div>
         </div>
-    </aside>
+        </aside>
+    </main>
+
+    
     <script src="dist/all.js"></script>
 </body>

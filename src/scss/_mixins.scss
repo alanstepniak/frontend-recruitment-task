@@ -11,3 +11,13 @@
     font-size: 16px;
     line-height: 150%;
 }
+
+@mixin button {
+    color: #ffffff;
+    padding: 16px 40px;
+    width: 128px;
+    height: 48px;
+    background: #e4c1ae;
+    border-radius: 32px;
+    border: none;
+}
