@@ -5,20 +5,20 @@ let x = document.getElementById("close");
 let counter = document.getElementById("counter");
 let reset = document.getElementById("reset");
 
-document.getElementById('dialogBox').addEventListener('click', function(e){
+document.getElementById('dialogBox').addEventListener('click', function (e) {
     e.stopPropagation()
 })
-
 
 customAlert = () => {
     let dialogOverlay = document.getElementById('dialogOverlay');
     let dialogBox = document.getElementById('dialogBox');
     dialogOverlay.style.display = "block";
     dialogBox.style.display = "inline-block";
-    let newCounterValue = parseInt(counter.innerHTML)+ 1
+    let newCounterValue = parseInt(counter.innerHTML) + 1;
     counter.innerHTML = newCounterValue
     resetShow()
-    localStorage.setItem('counter',newCounterValue);
+
+    localStorage.setItem('counter', newCounterValue);
 }
 
 closeAlert = () => {
@@ -42,6 +42,15 @@ resetValue = () => {
 btn.addEventListener("click", customAlert);
 ovl.addEventListener("click", closeAlert);
 x.addEventListener("click", closeAlert);
-reset.addEventListener("click",resetValue);
+reset.addEventListener("click", resetValue);
+
+window.onload = () => {
+    counter.innerHTML = localStorage.getItem('counter');
+}
+
+
+
+
+
 
 
