@@ -4,12 +4,17 @@
 @import "text";
 @import "alert";
 @import "media";
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     color: $main-font-color;
     font-family: $main-font-family;
     background-color: #e5e5e5;
 
-    #container {
+    .container {
         max-width: 1440px;
         max-height: 960px;
         display: flex;
@@ -22,7 +27,7 @@ body {
             top: 96px;
         }
 
-        #content {
+        .content {
             margin-left: 95px;
             width: 380px;
             height: 250px;
