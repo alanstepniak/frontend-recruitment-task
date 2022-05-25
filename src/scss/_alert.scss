@@ -9,13 +9,7 @@
     align-items: center;
     justify-content: center;
 }
-.bgContent {
-    display: flex;
-    justify-content: space-between;
-    width: 980px;
-    height: 330px;
-    margin: 96px 230px 534px 230px;
-}
+
 .dialogBox {
     display: none;
     background-color: white;
@@ -24,7 +18,7 @@
     height: 210px;
     z-index: 200;
 
-    span.close {
+    .close {
         position: absolute;
         right: 46px;
         top: 46px;
@@ -38,8 +32,6 @@
     .boxContent {
         width: 380px;
         height: 98px;
-        left: 355px;
-        top: 431px;
         margin: 56px 445px 56px 95px;
 
         .reset {

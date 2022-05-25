@@ -1,11 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "button";
-@import "text";
 @import "alert";
 @import "media";
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -20,19 +19,33 @@ body {
         display: flex;
         justify-content: center;
 
-        img {
-            width: 505px;
-            height: 330px;
-            left: 230px;
-            top: 96px;
+        .bgContent {
+            display: flex;
+            justify-content: space-between;
         }
 
         .content {
-            margin-left: 95px;
-            width: 380px;
-            height: 250px;
-            left: 830px;
-            top: 136px;
+            h1 {
+                @include big;
+            }
+
+            p {
+                @include small;
+            }
         }
     }
+}
+
+.content {
+    margin-left: 95px;
+}
+
+.bgContent {
+    width: 980px;
+    margin-top: 96px;
+}
+
+img {
+    width: 505px;
+    height: 330px;
 }
